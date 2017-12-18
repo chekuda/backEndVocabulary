@@ -1,21 +1,21 @@
 const express = require('express')
+const cors = require('cors')
 const bodyParser = require('body-parser')
 const commonPaths = require('./server-config/commons-paths/common-paths')
 const routes = require('./server-config/api/routes/routes')
 
 const app = express()
 
-const port = process.env.PORT || 3000
+app.use(cors())
+
+const port = process.env.PORT || 5000
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json())
 
-//Serve static files
-app.use(express.static(commonPaths.staticFilesFolder))
-
 routes(app)
 
-app.get('/', (req, res) => res.sendFile('index.html'))
+app.get('/', (req, res) => res.sned('WELLCOME TO CHECKUDA API'))
 
 app.listen(port)
 
