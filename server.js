@@ -6,14 +6,14 @@ const routes = require('./server-config/api/routes/routes')
 
 const app = express()
 
-app.use(cors())
+// app.use(cors())
 
-const port = process.env.PORT || 5000
+// const port = process.env.PORT || 5000
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json())
+// app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.json())
 
-routes(app)
+// routes(app)
 
 app.get('/', (req, res) => res.send('WELLCOME TO CHECKUDA API'))
 
