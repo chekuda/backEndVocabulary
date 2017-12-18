@@ -1,8 +1,8 @@
 const express = require('express')
-const cors = require('cors')
-const bodyParser = require('body-parser')
-const commonPaths = require('./server-config/commons-paths/common-paths')
-const routes = require('./server-config/api/routes/routes')
+// const cors = require('cors')
+// const bodyParser = require('body-parser')
+// const commonPaths = require('./server-config/commons-paths/common-paths')
+// const routes = require('./server-config/api/routes/routes')
 
 const app = express()
 
