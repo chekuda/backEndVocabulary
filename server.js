@@ -15,7 +15,7 @@ app.use(bodyParser.json())
 
 routes(app)
 
-app.get('/', (req, res) => res.sned('WELLCOME TO CHECKUDA API'))
+app.get('/', (req, res) => res.send('WELLCOME TO CHECKUDA API'))
 
 app.listen(port)
 
